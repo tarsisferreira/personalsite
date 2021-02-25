@@ -123,7 +123,7 @@ STATIC_URL = '/staticfiles/'
 
 MEDIA_URL = '/images/'
 
-MEDIA_ROOT = '/Users/talz/Dropbox/ts/mywb/staticfiles'
+MEDIA_ROOT = '/tarsisferreira/personalsite/mywb/staticfiles'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'staticfiles')
