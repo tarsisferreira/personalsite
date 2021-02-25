@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+{% load embed_video_tags %}
 {% load static %}
     <head>
         <meta charset="utf-8" />
@@ -8,6 +8,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Resume - Start Bootstrap Theme</title>
+        <link rel="icone" href="{%static 'images/ff.ico' %}">
         <link rel="icon" type="image/x-icon" href="{%static 'images/favicon.ico' %}"/>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -16,6 +17,8 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{%static 'css/styles.css' %}" rel="stylesheet" />
+        <link rel="stylesheet" href="//Users/talz/Downloads/academicons-1.9.1/css/academicons.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -28,9 +31,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Work</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Research</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
                 </ul>
             </div>
         </nav>
@@ -47,174 +49,271 @@
                         President at Optimvia ·
                         <a href="tarsis.ferreira@gmail.com">tarsisferreira@optimvia.com</a>
                     </div>
-                    <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                    <p class="lead mb-5"> Inventor | Computational Biologist | Glycobiologist </p>
                     <div class="social-icons">
-                        <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="#"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://github.com/tarsisferreira"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/tarsisgesteira"><i class="fab fa-linkedin-in"></i></a>                        
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Experience-->
+            <!-- Research-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
+                    <h2 class="mb-5">Research</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                        <div class="subheading mb-0">What I do</div> 
+                         	 <p class="text-justify"  >
+                             I am broadly concerned with the development and application of state-of-the-art computational and theoretical techniques to investigate the structure, function, and dynamics of complex biological systems, with emphasis on enzymes that process glycans. At the interface of chemistry, biology, physics, and glycobiology, my goal is to effectivelly understand the fundamentals of protein recognition. </p>  
+                        <div class="subheading mb-3">How Heparin is synthesized
+                                    <video video autoplay='true'  loop='true' muted='true' width='640' height= '480'  class="img-fluid img-profile mx-auto mb-2">
+            <source src="{% static 'images/ote.mp4' type='video/mp4' %}">
+            Your browser does not support the video tag. </div>  
+            </video>
+            
+                        <div>
+                             <p class="text-justify"  >
+                             Understanding how glycan modifying enzymes function is critical for controlling heparin biosynthesis. We have found that HS2ST, the enzyme that adds a sulfate to the oxygen at the position two of uronic acidcs, has two LYS/ARG glycan clamps (K111/R189 in cyan and K250/R288 in purple) that position the uronic acceptor 2-oxygen for nucleophilic attack from H142 (insert). 
+                             </p>               
+                             <div class="subheading mb-3"></div>
+                             <img class="img-fluid img-profile mx-auto mb-2" src="{%static 'images/2.png' %}" >       
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
+                        <div>
+                        <div>
+                             <p class="text-justify"  >
+                             HS6ST has two tryptophan residues nearby its active site and the catalytic H153 (insert). The pair K131/K132 guarantees favorable binding of more negatively charged sugars (IdoA2S) at position +4, where a loop (yellow) controls wich is the best substrate and position the substrate using a "focused motion".  
+                             </p>               
+
+                                         <div class="subheading mb-3"></div>
+                             <img class="img-fluid img-profile mx-auto mb-2" src="{%static 'images/6.png' %}" >       
+                        <div>
+                    </div>
+                        </div>
+                                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <video video autoplay='true'  loop='true' muted='true' width='640' height= '480' class="img-fluid img-profile mx-auto mb-2" center >
+            <source src="{% static 'images/66o.mp4' type='video/mp4' %}">
+            Your browser does not support the video tag. </div>  
+            </video>
+            </section>
+
+            <section class="resume-section" id="experience">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+            <div class="subheading mb-3">How Hyaluronic acid is synthesized</div> 
+                        <div>            
+                             <p class="text-justify"  >
+                             Studies have shown that primarily two forms of HA are produced by HAS enzymes; high molecular weight HA (HMWHA) of approximately 2 000 kDa and low molecular weight HA (LMWHA) of approximately 200 kDa. HMWHA has anti-inflammatory effects and is primarily correlated with tissue integrity while LMWHA has pro-inflammatory effects and is primarily correlated with pathogenesis. The size of the HA chains dictate the composition of the modified matrix, and the formation of this modified HA matrix drastically changes its physiological properties. The formation of HC-HA complexes is believed to provide ECM stabilization through crosslinking mechanisms and to also regulate inflammatory cells. Therefore, targeting the HA content during pathogenesis, including injury, inflammatory disorders, cardiovascular disease and cancer, is becoming an extremely attractive strategy for intervention. In recent years, pharmaceutical interest in HA has grown exponentially, and many cosmetic products and FDA approved medications, such as eye drops, currently contain HA as an active component. However, basic understanding on how HAS enzymes regulate the length of the growing HA chain during the biosynthetic process, which drastically affects its physiological function, remains unknown. As the HA chain is synthesized it is incorporated into the ECM, and some groups have hypothesized that the stiffness of the tissue during pathogenesis could lead to a greater “pulling force” on the growing HA chain, which would lead to the production of shorter HA chains. It has also been speculated that HAS 1 and HAS 3 produce primarily HMWHA while HAS 2 produces primarily LMWHA; however, some groups have shown that all HAS isoforms have the ability make both HMWHA and LMWHA. Interestingly, naked mole-rat fibroblasts have been shown to secrete extremely high-molecular-weight hyaluronan (EHMWHA), over five times larger than that found in other mammals including humans. 
+                             </p>               
+                             <div class="subheading mb-3"></div>
+                             <img class="img-fluid img-profile mx-auto mb-2" src="{%static 'images/Fig_1_Cellulose4.jpg' %}" >   
+                        </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Web Designer</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Design Intern</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
+             <!-- Publications-->
+            <section class="resume-section" id="publications">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
+                    <h2 class="mb-5">Publications  <a class="class="  href="https://scholar.google.com/citations?user=kU3XHIIAAAAJ&hl=en" title="Website name" ><i class="ai ai-google-scholar-square ai-1x"></i></ </h2>    </a> </h2><dir></dir>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="subheading mb-0">2021</div> 
+                             <p class="text-justify"  >
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >31.</span>  
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/32790859/"  >Lightning TA, Gesteira TF, Mueller JW. Steroid disulfates - Sulfation double trouble. Mol Cell Endocrinol. 2021 Mar 15;524:111161. doi: 10.1016/j.mce.2021.111161. Epub 2021 Jan 14. PMID: 33453296.</a>
+                                                    </div> </p>  
+                        <div class="subheading mb-0">2020</div> 
+                                                    <p class="text-justify"  >
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >30.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/32903857/"  >Puri S, Coulson-Thomas YM, Gesteira TF, Coulson-Thomas VJ. Distribution and Function of Glycosaminoglycans and Proteoglycans in the Development, Homeostasis and Pathology of the Ocular Surface. Front Cell Dev Biol. 2020 Aug 7;8:731. doi: 10.3389/fcell.2020.00731. PMID: 32903857; PMCID: PMC7438910.</a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >29.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/32790859/"  >Puri S, Sun M, Mutoji KN, Gesteira TF, Coulson-Thomas VJ. Epithelial Cell Migration and Proliferation Patterns During Initial Wound Closure in Normal Mice and an Experimental Model of Limbal Stem Cell Deficiency. Invest Ophthalmol Vis Sci. 2020 Aug 3;61(10):27. doi: 10.1167/iovs.61.10.27. PMID: 32790859; PMCID: PMC7441334.</a>
+                                                    </div> </p>  
+                        <div class="subheading mb-0">2019</div>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >28.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/30897620/"  >Sun M, Puri S, Mutoji KN, Coulson-Thomas YM, Hascall VC, Jackson DG, Gesteira TF, Coulson-Thomas VJ. Hyaluronan Derived From the Limbus is a Key Regulator of Corneal Lymphangiogenesis. Invest Ophthalmol Vis Sci. 2019 Mar 1;60(4):1050-1062. doi: 10.1167/iovs.18-25920. PMID: 30897620; PMCID: PMC6432804.</a>
+                                                    </div> </p>  
+                        <div class="subheading mb-0">2018</div>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >27.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/29878110/"  >Gesteira TF, Coulson-Thomas VJ. Structural basis of oligosaccharide processing by glycosaminoglycan sulfotransferases. Glycobiology. 2018 Nov 1;28(11):885-897. doi: 10.1093/glycob/cwy055. PMID: 29878110.</a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >26.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/29743239/"  >Mueller JW, Idkowiak J, Gesteira TF, Vallet C, Hardman R, van den Boom J, Dhir V, Knauer SK, Rosta E, Arlt W. Human DHEA sulfation requires direct interaction between PAPS synthase 2 and DHEA sulfotransferase SULT2A1. J Biol Chem. 2018 Jun 22;293(25):9724-9735. doi: 10.1074/jbc.RA118.002248. Epub 2018 May 9. PMID: 29743239; PMCID: PMC6016456.</a>
+                                                    </div> </p>  
+                        <div class="subheading mb-0">2017</div>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >25.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/28863216/"  >Gesteira TF, Sun M, Coulson-Thomas YM, Yamaguchi Y, Yeh LK, Hascall V, Coulson-Thomas VJ. Hyaluronan Rich Microenvironment in the Limbal Stem Cell Niche Regulates Limbal Stem Cell Differentiation. Invest Ophthalmol Vis Sci. 2017 Sep 1;58(11):4407-4421. doi: 10.1167/iovs.17-22326. PMID: 28863216; PMCID: PMC5584473.</a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >24.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/28181591/"  >Gesteira TF, Coulson-Thomas VJ, Yuan Y, Zhang J, Nader HB, Kao WW. Lumican Peptides: Rational Design Targeting ALK5/TGFBRI. Sci Rep. 2017 Feb 9;7:42057. doi: 10.1038/srep42057. PMID: 28181591; PMCID: PMC5299588.</a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >23.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/28770943/"  >Meneghetti MCZ, Gesteira Ferreira T, Tashima AK, Chavante SF, Yates EA, Liu J, Nader HB, Lima MA. Insights into the role of 3-O-sulfotransferase in heparan sulfate biosynthesis. Org Biomol Chem. 2017 Aug 16;15(32):6792-6799. doi: 10.1039/c7ob01533j. PMID: 28770943; PMCID: PMC6518394.</a>
+                                                    </div> </p> 
+                        <div class="subheading mb-0">2016</div> 
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >22.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/28123405/"  >Gesteira TF, Coulson-Thomas YM, Coulson-Thomas VJ. Anti-inflammatory properties of the glial scar. Neural Regen Res. 2016 Nov;11(11):1742-1743. doi: 10.4103/1673-5374.194710. PMID: 28123405; PMCID: PMC5204217.</a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >21.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/26804815/"  >Coulson-Thomas VJ, Coulson-Thomas YM, Gesteira TF, Kao WW. Extrinsic and Intrinsic Mechanisms by Which Mesenchymal Stem Cells Suppress the Immune System. Ocul Surf. 2016 Apr;14(2):121-34. doi: 10.1016/j.jtos.2015.11.004. Epub 2016 Jan 12. PMID: 26804815; PMCID: PMC4842329.</a>
+                                                    </div> </p>  
+                        <div class="subheading mb-0">2015</div>
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >20.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/26107959/"  >Coulson-Thomas YM, Coulson-Thomas VJ, Norton AL, Gesteira TF, Cavalheiro RP, Meneghetti MC, Martins JR, Dixon RA, Nader HB. The identification of proteoglycans and glycosaminoglycans in archaeological human bones and teeth. PLoS One. 2015 Jun 24;10(6):e0131105. doi: 10.1371/journal.pone.0131105. PMID: 26107959; PMCID: PMC4481269.</a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >19.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/24931397/"  >Coulson-Thomas YM, Gesteira TF, Norton AL, Kao WW, Nader HB, Coulson-Thomas VJ. The role of proteoglycans in the reactive stroma on tumor growth and progression. Histol Histopathol. 2015 Jan;30(1):33-41. doi: 10.14670/HH-30.33. Epub 2014 Jun 16. PMID: 24931397.</a>
+                                                    </div> </p>        
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >18.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/26610209/"  >Moura GE, Lucena SV, Lima MA, Nascimento FD, Gesteira TF, Nader HB, Paredes-Gamero EJ, Tersariol IL. P2X7 receptor activity regulation: the role of CD44 proteoglycan GAG chains. Cell Death Dis. 2015 Nov 26;6(11):e1997. doi: 10.1038/cddis.2015.340. PMID: 26610209; PMCID: PMC4670943.</a>
+                                                    </div> </p>                                               
+                        <div class="subheading mb-0">2014</div>
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >17.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/25053416/"  >Coulson-Thomas VJ, Gesteira TF, Esko J, Kao W. Heparan sulfate regulates hair follicle and sebaceous gland morphogenesis and homeostasis. J Biol Chem. 2014 Sep 5;289(36):25211-26. doi: 10.1074/jbc.M114.572511. Epub 2014 Jul 22. PMID: 25053416; PMCID: PMC4155684.</a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >16.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/24986866/"  >Coulson-Thomas VJ, Gesteira TF, Hascall V, Kao W. Umbilical cord mesenchymal stem cells suppress host rejection: the role of the glycocalyx. J Biol Chem. 2014 Aug 22;289(34):23465-81. doi: 10.1074/jbc.M114.557447. Epub 2014 Jul 1. PMID: 24986866; PMCID: PMC4156039.</a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >15.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/24232366/"  >Córdula CR, Lima MA, Shinjo SK, Gesteira TF, Pol-Fachin L, Coulson-Thomas VJ, Verli H, Yates EA, Rudd TR, Pinhal MA, Toma L, Dietrich CP, Nader HB, Tersariol IL. On the catalytic mechanism of polysaccharide lyases: evidence of His and Tyr involvement in heparin lysis by heparinase I and the role of Ca2+. Mol Biosyst. 2014 Jan;10(1):54-64. doi: 10.1039/c3mb70370c. PMID: 24232366.</a>
+                                                    </div> </p>                                                      
+                         <div class="subheading mb-0">2013</div>                                                   
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >14.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/24376827/"  >Ogata FT, Batista WL, Sartori A, Gesteira TF, Masutani H, Arai RJ, Yodoi J, Stern A, Monteiro HP. Nitrosative/oxidative stress conditions regulate thioredoxin-interacting protein (TXNIP) expression and thioredoxin-1 (TRX-1) nuclear localization. PLoS One. 2013 Dec 20;8(12):e84588. doi: 10.1371/journal.pone.0084588. PMID: 24376827; PMCID: PMC3869934.</a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >13.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/24367547/"  >Yamanaka O, Yuan Y, Coulson-Thomas VJ, Gesteira TF, Call MK, Zhang Y, Zhang J, Chang SH, Xie C, Liu CY, Saika S, Jester JV, Kao WW. Lumican binds ALK5 to promote epithelium wound healing. PLoS One. 2013 Dec 18;8(12):e82730. doi: 10.1371/journal.pone.0082730. PMID: 24367547; PMCID: PMC3867403.</a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >12.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/24278253/"  >Judice WA, Manfredi MA, Souza GP, Sansevero TM, Almeida PC, Shida CS, Gesteira TF, Juliano L, Westrop GD, Sanderson SJ, Coombs GH, Tersariol IL. Heparin modulates the endopeptidase activity of Leishmania mexicana cysteine protease cathepsin L-Like rCPB2.8. PLoS One. 2013 Nov 21;8(11):e80153. doi: 10.1371/journal.pone.0080153. PMID: 24278253; PMCID: PMC3836952.
+                                                    </a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >11.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/23940657/"  >Gesteira TF, Pol-Fachin L, Coulson-Thomas VJ, Lima MA, Verli H, Nader HB. Insights into the N-sulfation mechanism: molecular dynamics simulations of the N-sulfotransferase domain of NDST1 and mutants. PLoS One. 2013 Aug 5;8(8):e70880. doi: 10.1371/journal.pone.0070880. PMID: 23940657; PMCID: PMC3733922.</a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >10.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/23399832/"  >Coulson-Thomas VJ, Coulson-Thomas YM, Gesteira TF, Andrade de Paula CA, Carneiro CR, Ortiz V, Toma L, Kao WW, Nader HB. Lumican expression, localization and antitumor activity in prostate cancer. Exp Cell Res. 2013 Apr 15;319(7):967-81. doi: 10.1016/j.yexcr.2013.01.023. Epub 2013 Feb 8. PMID: 23399832; PMCID: PMC3633477.</a>
+                                                    </div> </p>  
+
+                         <div class="subheading mb-0">2012</div>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >9.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/22395574/"  >Lima MA, de Farias EH, Gray A, Sadeghi N, Gesteira TF, Cavalheiro RP, Hoppensteadt D, Fareed J, Sassaki GL, Nader HB. Structural and pharmacological profile of generic enoxaparins used in Brazil. Clin Appl Thromb Hemost. 2012 Jul;18(4):379-86. doi: 10.1177/1076029611426870. Epub 2012 Mar 5. PMID: 22395574.
+                                                    </a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >8.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/22387539/"  >Dalio FM, Visniauskas B, Bicocchi ES, Perry JC, Freua R, Gesteira TF, Nader HB, Machado MF, Tufik S, Ferro ES, Andersen ML, Toledo CA, Chagas JR, Oliveira V. Acute cocaine treatment increases thimet oligopeptidase in the striatum of rat brain. Biochem Biophys Res Commun. 2012 Mar 23;419(4):724-7. doi: 10.1016/j.bbrc.2012.02.088. Epub 2012 Feb 24. PMID: 22387539. </a>
+                                                    </div> </p>
+                                                    </a>
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >7.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/22266526/"  >Scaffa PM, Vidal CM, Barros N, Gesteira TF, Carmona AK, Breschi L, Pashley DH, Tjäderhane L, Tersariol IL, Nascimento FD, Carrilho MR. Chlorhexidine inhibits the activity of dental cysteine cathepsins. J Dent Res. 2012 Apr;91(4):420-5. doi: 10.1177/0022034511435329. Epub 2012 Jan 19. PMID: 22266526.
+                                                    </a>
+                                                    <p class="text-justify"  >
+                                                    </div> </p>   
+                         <div class="subheading mb-0">2011</div>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >6.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/21987222/"  >Coulson-Thomas VJ, Coulson-Thomas YM, Gesteira TF, de Paula CA, Mader AM, Waisberg J, Pinhal MA, Friedl A, Toma L, Nader HB. Colorectal cancer desmoplastic reaction up-regulates collagen synthesis and restricts cancer cell invasion. Cell Tissue Res. 2011 Nov;346(2):223-36. doi: 10.1007/s00441-011-1254-y. Epub 2011 Oct 11. PMID: 21987222.
+                                                    </a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >5.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/21854878/"  >Gesteira TF, Coulson-Thomas VJ, Ogata FT, Farias EH, Cavalheiro RP, de Lima MA, Cunha GL, Nakayasu ES, Almeida IC, Toma L, Nader HB. A novel approach for the characterisation of proteoglycans and biosynthetic enzymes in a snail model. Biochim Biophys Acta. 2011 Dec;1814(12):1862-9. doi: 10.1016/j.bbapap.2011.07.024. Epub 2011 Aug 5. PMID: 21854878.
+                                                    </a>
+                                                    </div> </p>
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >4.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/21731773/"  >Nunes GL, Simões A, Dyszy FH, Shida CS, Juliano MA, Juliano L, Gesteira TF, Nader HB, Murphy G, Chaffotte AF, Goldberg ME, Tersariol IL, Almeida PC. Mechanism of heparin acceleration of tissue inhibitor of metalloproteases-1 (TIMP-1) degradation by the human neutrophil elastase. PLoS One. 2011;6(6):e21525. doi: 10.1371/journal.pone.0021525. Epub 2011 Jun 23. PMID: 21731773; PMCID: PMC3121799.
+                                                    </a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >3.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/21267460/"  >Lima MA, Rudd TR, de Farias EH, Ebner LF, Gesteira TF, de Souza LM, Mendes A, Córdula CR, Martins JR, Hoppensteadt D, Fareed J, Sassaki GL, Yates EA, Tersariol IL, Nader HB. A new approach for heparin standardization: combination of scanning UV spectroscopy, nuclear magnetic resonance and principal component analysis. PLoS One. 2011 Jan 18;6(1):e15970. doi: 10.1371/journal.pone.0015970. PMID: 21267460; PMCID: PMC3022730. </a>
+                                                    </div> </p>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >2.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/20129923/"  >esteira TF, Coulson-Thomas VJ, Taunay-Rodrigues A, Oliveira V, Thacker BE, Juliano MA, Pasqualini R, Arap W, Tersariol IL, Nader HB, Esko JD, Pinhal MA. Inhibitory peptides of the sulfotransferase domain of the heparan sulfate enzyme, N-deacetylase-N-sulfotransferase-1. J Biol Chem. 2011 Feb 18;286(7):5338-46. doi: 10.1074/jbc.M110.100719. Epub 2010 Feb 2. PMID: 20129923; PMCID: PMC3037646. </a>
+                                                    </div> </p>  
+                         <div class="subheading mb-0">2010</div>  
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >1.</span> 
+                                                    <a href="https://pubmed.ncbi.nlm.nih.gov/20727350/"  >Coulson-Thomas VJ, Gesteira TF, Coulson-Thomas YM, Vicente CM, Tersariol IL, Nader HB, Toma L. Fibroblast and prostate tumor cell cross-talk: fibroblast differentiation, TGF-β, and extracellular matrix down-regulation. Exp Cell Res. 2010 Nov 15;316(19):3207-26. doi: 10.1016/j.yexcr.2010.08.005. Epub 2010 Aug 18. PMID: 20727350.
+                                                    </a>
+                                                    </div> </p>                                                     
+
+                                                    <i class=""></i></ </h2>    </a> </h2><dir></dir>
+                                                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                                    <div class="flex-grow-1">
+                                                    <i class=""></i></ </h2>    </a> </h2><dir></dir>
+                                                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                                    <div class="flex-grow-1">
+                                                    <i class=""></i></ </h2>    </a> </h2><dir></dir>
+                                                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                                    <div class="flex-grow-1">
+                                                    <i class=""></i></ </h2>    </a> </h2><dir></dir>
+                                                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                                    <div class="flex-grow-1">
+                                                    <i class=""></i></ </h2>    </a> </h2><dir></dir>
+                                                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                                    <div class="flex-grow-1">
+                                                    <i class=""></i></ </h2>    </a> </h2><dir></dir>
+                                                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                                    <div class="flex-grow-1">
+                                                    <h2 class="mb-5">Patents  <a class="class="  href="https://patents.google.com/?q=tf&inventor=gesteira&oq=gesteira+tf" title="Website name" ><i class="ai ai-dblp-square ai-1x"></i></ </h2>    </a> </h2><dir></dir>   
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >1.</span> 
+                                                    <a href="https://patentimages.storage.googleapis.com/fe/37/86/4fe0ea4937f057/WO2020150350A1.pdf"  >Engineered aryl sulfate-dependent enzymes. WO2020150350A1 Tarsis Gesteira FERREIRA Optimvia, LLC.
+                                                    </a>
+                                                    </div> </p>     
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >The present invention provides several non-naturally occurring sulfotransferase enzymes that have been engineered to react with aryl sulfate compounds as sulfo group donors, instead of the natural substrate 3 '-phosphoadenosine 5'-phosphosulfate, and with heparosan-based polysaccharides, particularly heparan sulfate, as sulfo group acceptors. Each of the engineered sulfotransferase enzymes have a biological activity characterized by the position within the heparosan-based polysaccharide that receives the sulfo group, including glucosaminyl N-sulfotransferase activity, hexuronyl 2-O sulfotransferase activity, glucosaminyl 6-O sulfotransferase activity, or glucosaminyl 3-O sulfotransferase activity. Methods of using the engineered sulfotransferases to produce sulfated heparosan-based polysaccharides, including polysaccharides having anticoagulant activity, are also provided.</span>   
+                                                    </a>
+                                                    </div> </p>     
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >2.</span> 
+                                                    <a href="https://patentimages.storage.googleapis.com/fe/37/86/4fe0ea4937f057/WO2020150350A1.pdf"  >Methods for synthesizing anticoagulant polysaccharides. WO2021007429A1  Tarsis Gesteira FERREIRA Optimvia, LLC.
+                                                    </a>
+                                                    </div> </p>     
+                                                    <p class="text-justify"  >
+                                                    <div class="flex-shrink-0" class="text-justify" ><p class="text-justify" >The present invention includes methods for preparing anticoagulant polysaccharides using several non-naturally occurring, engineered sulfotransferase enzymes that are designed to react with aryl sulfate compounds instead of the natural substrate, 3 '-phosphoadenosine 5 '-phosphosulfate, to facilitate sulfo group transfer to polysaccharide sulfo group acceptors. Suitable aryl sulfate compounds include, but are not limited to, p-nitrophenyl sulfate or 4-nitrocatechol sulfate. Anticoagulant polysaccharides produced by methods of the present invention comprise N-, 3-0-, 6- O-sulfated glucosamine residues and 2-0 sulfated hexuronic acid residues, have comparable anticoagulant activity compared to commercially-available anticoagulant polysaccharides, and can be utilized to form truncated anticoagulant polysaccharides having a reduced molecular weight. </span>   
+                                                    </a>
+                                                    </div> </p>                                                       
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
+            <hr class="m-0" />           
+
+
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
